@@ -98,9 +98,9 @@ function onClickItem(e) {
     }
 
     if(e.target.parentElement.classList.contains("remove-item")) {
-        removeItem(e.target.parentElement.parentElement)
+        removeItem(e.target.parentElement.parentElement);
     } else {
-        setItemToEdit(e.target)
+        setItemToEdit(e.target);
     }
 }
 
@@ -144,7 +144,7 @@ function removeItemFromStorage(item) {
 
 function clearItems() {
     while(itemList.firstChild) {
-        itemList.removeChild(itemList.firstChild)
+        itemList.removeChild(itemList.firstChild);
     }
 
     //Clear from local storage
